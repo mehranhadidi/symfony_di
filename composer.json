@@ -6,5 +6,7 @@
             "email": "mehran.hadidi@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "symfony/dependency-injection": "^4.2"
+    }
 }
