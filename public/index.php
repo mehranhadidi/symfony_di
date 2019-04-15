@@ -26,8 +26,14 @@ $post = new Post();
 
 $accessManager = new AccessManager([new PostVoter()]);
 
+// Can a user read post? true
 dump($accessManager->decide(PostVoter::READ, $post, $user));
+
+// Can an admin read post? true
 dump($accessManager->decide(PostVoter::READ, $post, $admin));
 
+// Can a user write post? false
 dump($accessManager->decide(PostVoter::WRITE, $post, $user));
+
+// Can an admin write post? true
 dump($accessManager->decide(PostVoter::WRITE, $post, $admin));
