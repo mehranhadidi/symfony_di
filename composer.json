@@ -1,0 +1,10 @@
+{
+    "name": "mehran/symfony_di",
+    "authors": [
+        {
+            "name": "Mehran",
+            "email": "mehran.hadidi@gmail.com"
+        }
+    ],
+    "require": {}
+}
