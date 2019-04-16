@@ -29,9 +29,10 @@ $containerBuilder->register('access_manager', AccessManager::class)
     // Set this service to be public and accessible via get
     ->setPublic(true);
 
+// Compile and optimize the container
+$containerBuilder->compile();
+
 $accessManager = $containerBuilder->get('access_manager');
-
-
 
 $user = new User();
 $user->setUsername('user');
